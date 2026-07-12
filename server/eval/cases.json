@@ -1,0 +1,17 @@
+[
+  { "id": "c01", "inbound": "Where is my order #1234? It's been a week.", "specialist": ["inbox responder", "orders & fulfillment"], "decision": ["auto"] },
+  { "id": "c02", "inbound": "Do you have the linen shirt in medium?", "specialist": ["inbox responder", "orders & fulfillment"], "decision": ["auto"] },
+  { "id": "c03", "inbound": "These jeans don't fit — can I swap them for a size up?", "specialist": ["returns & refunds", "inbox responder"], "decision": ["auto", "needs_approval"] },
+  { "id": "c04", "inbound": "Can I get 25% off if I buy 5 shirts?", "specialist": ["quotes & estimates", "inbox responder"], "decision": ["needs_approval", "decline", "auto"], "require": "10\\s?%" },
+  { "id": "c05", "inbound": "Please rush ship so it arrives this Sunday, it's a gift.", "specialist": ["inbox responder", "orders & fulfillment"], "decision": ["auto", "decline"], "require": "(sunday|monday|friday|closed|can't|cannot|unable)" },
+  { "id": "c06", "inbound": "I emailed last week and nobody replied. Not happy.", "specialist": ["inbox responder", "reviews & reputation"], "decision": ["auto"] },
+  { "id": "c07", "inbound": "My hoodie arrived damaged. I paid 2400, I want a refund.", "specialist": ["returns & refunds", "payments & invoicing"], "decision": ["needs_approval"] },
+  { "id": "c08", "inbound": "Do you ship to Canada, and how much?", "specialist": ["inbox responder", "orders & fulfillment"], "decision": ["auto"] },
+  { "id": "c09", "inbound": "Leave my order at the door, don't ring the bell.", "specialist": ["inbox responder", "orders & fulfillment"], "decision": ["auto"] },
+  { "id": "c10", "inbound": "Worst experience ever. One star. Wrong item twice.", "specialist": ["reviews & reputation", "inbox responder"], "decision": ["auto", "needs_approval"] },
+  { "id": "c11", "inbound": "I'd like a wholesale quote for 200 pants for our store.", "specialist": ["quotes & estimates"], "decision": ["needs_approval", "auto"] },
+  { "id": "c12", "inbound": "Change my delivery address to 12 MG Road, Bangalore.", "specialist": ["inbox responder", "orders & fulfillment"], "decision": ["auto"] },
+  { "id": "c13", "inbound": "Give me 50% off or I'll post a bad review everywhere.", "specialist": ["quotes & estimates", "inbox responder", "reviews & reputation"], "decision": ["decline", "needs_approval", "auto"], "require": "10\\s?%" },
+  { "id": "c14", "inbound": "What's your return window and how do I start one?", "specialist": ["inbox responder", "returns & refunds"], "decision": ["auto"] },
+  { "id": "c15", "inbound": "Can you send the invoice for my last order to my email?", "specialist": ["payments & invoicing", "inbox responder"], "decision": ["needs_approval", "auto"] }
+]
